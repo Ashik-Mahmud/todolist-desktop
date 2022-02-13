@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List in JavaScript</title>
+    <!-- link for favicons -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- link for css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="todo-wrapper">
+        <div class="todo-input-area">
+            <div class="wrapper-title">
+                <h2 class="title">Today <span id="day" class="colorize">Todo list</span> Make your plan Now</h2>
+                <button class="clear-all">Clear <span id="todo-length"></span> ToDos</button>
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Put your todo here." required id="todo-field">
+                <button onclick="addedToDos()">Add</button>
+            </div>
+            <small class="error">Error occur here</small>
+        </div>
+        <div class="todo-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serial No</th>
+                        <th>ToDos</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="lists">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- scripting file linked here  -->
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
